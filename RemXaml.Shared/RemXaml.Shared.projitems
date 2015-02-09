@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>71e8ece0-0ded-48de-9bf5-7347f28b7490</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>RemXaml.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\XmlExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)XamlParser.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)XPath\XPathAxis.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)XPath\XPathLexKind.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)XPath\XPathOperator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)XPath\XPathParserException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)XPath\XPathScanner.cs" />
+  </ItemGroup>
+</Project>
