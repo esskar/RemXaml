@@ -2,7 +2,7 @@
 using sugar.collections;
 using sugar.xml;
 
-namespace RemXaml.Shared
+namespace RemXaml
 {
 	public class XamlParser
 	{

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>1238f6fe-3f16-488f-9320-ce68e8d981cf</ProjectGuid>
+  </PropertyGroup> 
+  <PropertyGroup>
+	<RootNamespace>RemXpath.Shared</RootNamespace>
+  </PropertyGroup>
+  <Import Project="RemXpath.Shared.projitems" Label="Shared" />
+  <Import Project="$(MSBuildExtensionsPath)\RemObjects Software\Oxygene\RemObjects.Elements.SharedProject.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+  </PropertyGroup>
+</Project>

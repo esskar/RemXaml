@@ -60,4 +60,5 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\RemObjects Software\Oxygene\RemObjects.Oxygene.Cooper.targets" />
   <Import Project="..\RemXaml.Shared\RemXaml.Shared.projitems" Label="Shared" />
+  <Import Project="..\RemXpath.Shared\RemXpath.Shared.projitems" Label="Shared" />
 </Project>

@@ -1,4 +1,4 @@
-﻿namespace RemXaml.Shared.XPath
+﻿namespace RemXpath
 {
 	public enum XPathOperator
 	{

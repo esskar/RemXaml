@@ -7,6 +7,8 @@ Project("{656346D9-4656-40DA-A068-22D5425D4639}") = "RemXaml.Cooper", "RemXaml.C
 EndProject
 Project("{656346D9-4656-40DA-A068-22D5425D4639}") = "RemXaml.Shared", "RemXaml.Shared\RemXaml.Shared.elements", "{71E8ECE0-0DED-48DE-9BF5-7347F28B7490}"
 EndProject
+Project("{656346D9-4656-40DA-A068-22D5425D4639}") = "RemXpath.Shared", "RemXpath.Shared\RemXpath.Shared.elements", "{AFF0F3E5-7D55-4F1C-8BD8-7438E8FDE624}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Default = Debug|Default

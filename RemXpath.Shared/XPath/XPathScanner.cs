@@ -1,6 +1,6 @@
 ﻿using sugar;
 
-namespace RemXaml.Shared.XPath
+namespace RemXpath
 {
     internal sealed class XPathScanner
     {
@@ -300,7 +300,7 @@ namespace RemXaml.Shared.XPath
 
         private bool CheckOperator(bool star)
         {
-            XPathLexKind op;
+            var op = XPathLexKind.Unknown;
 
             if (star)
             {
@@ -339,6 +339,30 @@ namespace RemXaml.Shared.XPath
             _kind = op;
 
             return true;
+        }
+
+		private XPathAxis CheckAxis() 
+		{
+            _kind = XPathLexKind.Axis;
+            switch (_name) 
+			{
+				case "ancestor": return XPathAxis.Ancestor;
+				case "ancestor-or-self": return XPathAxis.AncestorOrSelf;
+				case "attribute": return XPathAxis.Attribute;
+				case "child": return XPathAxis.Child;
+				case "descendant": return XPathAxis.Descendant;
+				case "descendant-or-self": return XPathAxis.DescendantOrSelf;
+				case "following": return XPathAxis.Following;
+				case "following-sibling": return XPathAxis.FollowingSibling;
+				case "namespace": return XPathAxis.Namespace;
+				case "parent": return XPathAxis.Parent;
+				case "preceding": return XPathAxis.Preceding;
+				case "preceding-sibling": return XPathAxis.PrecedingSibling;
+				case "self": return XPathAxis.Self;
+				default: 
+				    _kind = XPathLexKind.Name; 
+				    return XPathAxis.Unknown;
+            }
         }
 
         private void ScanNumber()

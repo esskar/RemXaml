@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>1238f6fe-3f16-488f-9320-ce68e8d981cf</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>RemXpath.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)XPath\XPathAxis.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)XPath\XPathLexKind.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)XPath\XPathOperator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)XPath\XPathParserException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)XPath\XPathScanner.cs" />
+  </ItemGroup>
+</Project>

@@ -1,6 +1,6 @@
 ﻿using sugar;
 
-namespace RemXaml.Shared.XPath
+namespace RemXpath
 {
 	public class XPathParserException : SugarException
 	{
